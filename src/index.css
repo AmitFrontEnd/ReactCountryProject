@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kumbh+Sans:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&family=Prata&family=Roboto:ital,wght@0,300;1,300&display=swap");
+@import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-element: hsl(209, 23%, 22%);
+  --color-dark: hsl(207, 26%, 17%);
+  --color-light: hsl(0, 100%, 100%);
+}
+
+@utility bg-* {
+  background-color: var(--color- *);
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+@utility text-* {
+  color: var(--color- *);
+}
+
+@utility border-* {
+  border-color: var(--color- *);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
